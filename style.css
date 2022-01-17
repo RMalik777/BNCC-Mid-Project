@@ -51,7 +51,6 @@ nav img{
 
 #main .container{
   height: 100%;
-  max-width: 1300px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -77,13 +76,13 @@ nav img{
 #about{
   width: 100vw;
   max-width: 100%;
-  padding:0px 4% 0px 4%;
 }
 
 #about .container{
   width: 100%;
   margin: auto;
   padding-bottom: 20px;
+  margin: auto;
 }
 
 #about .container h1{
@@ -107,12 +106,13 @@ nav img{
 #about .container .container2 .isi p{
   font-size: 18px;
   text-align: left;
+  width: 100%;
 }
 
 #about .container .container2 .table table,th,td{
   border: 1px solid black;
   border-collapse: collapse;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #about .container .container2 table{
@@ -141,7 +141,7 @@ nav img{
 }
 
 #skill .container .prog, .soft{
-  height: 18vw;
+  height: 15vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -150,7 +150,7 @@ nav img{
 #skill .container p{
   font-size: 14px;
   color: white;
-  width: 18%;
+  width: 18vw;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -215,6 +215,7 @@ nav img{
   justify-content: center;
   margin: auto;
   margin: 5px;
+  margin-bottom: 50px;
 }
 
 #contact .container .form{
@@ -233,24 +234,24 @@ nav img{
 }
 
 #contact .container .form h1{
-  font-size: 48px;
+  font-size: 24px;
   color: white;
   padding: 15px;
 }
 
 #contact .container .form label{
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   padding-left: 10px;
 }
 
 #contact .container .form input{
-  font-size: 24px;
+  font-size: 18px;
   border-radius: 15px;
 }
 
 #contact .container .form button{
-  font-size: 24px;
+  font-size: 18px;
   width: 50%;
   padding: 10px;
   text-align: center;
@@ -287,8 +288,8 @@ footer img{
 footer h1{
   color: white;
   text-align: center;
-  font-size: 28px;
-  padding: 5px;
+  font-size: 14px;
+  padding: 10px;
 }
 
 
@@ -333,33 +334,41 @@ footer h1{
   /*About*/
   #about{
     width: 100vw;
-    padding:0px 4% 0px 4%;
+    max-width: 100%;
+    padding: 0px 4% 0px 4%;
   }
   #about .container{
-    width: 100%;
-    margin: auto;
+    max-width: 100%;
     padding-bottom: 20px;
   }
   #about .container h1{
     font-size: 5vw;
   }
   #about .container .container2{
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
   }
   #about .container .container2 img{
     width: 33%;
   }
   #about .container .container2 .isi{
-    padding-left: 10px;
+    padding-left: 20px;
+    width: 73%;
     display: flex;
-    justify-content:flex-start;
-    gap: 10px;
+    justify-content:space-between;
   }
   #about .container .container2 .isi p,table{
     font-size: 1.875vw;
-  }  
+  }
+  #about .container .container2 .isi .p{
+    width: 50%;
+  }
+  #about .container .container2 .isi .table{
+    width: 50%;
+  } 
   
   /* SKILL */
   #skill h2{
@@ -379,137 +388,84 @@ footer h1{
     margin: 4%;
   }  
   #contact .container .form{
-    width: 40%;
+    width: 30%;
+    height: 50%;
     display: flex;
     flex-direction: column;
   }
   
   #contact .container .form h1{
-    font-size: 5vw;
+    font-size: 2.5vw;
     color: white;
     padding: 15px;
   }
   #contact .container .form label{
-    font-size: 2.5vw;
+    font-size: 1.4583vw;
   }
   #contact .container .form input{
-    font-size: 2.5vw;
+    font-size: 1.4583vw;
   }
   #contact .container .form button{
-    font-size: 2.5vw;
+    font-size: 1.4583vw;
   }
   
   /* FOOTER */
   footer h1{
-    font-size: 2.916vw;
+    font-size: 1.4583vw;
   }
 }
 
 @media only screen and (min-width: 1500px){
-  nav{
-    background-color: #2D2D2A;
-    width: 100vw;
-    max-width: 100%;
-    height: 50px;
-    position: fixed;
-  }
-  nav ul{
-    height: 50px;
-    max-height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-  }
-  nav ul li{
-    text-align: center;
-  }
-  nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-  }
-
   /* Main */
   #main .container h1{
-    font-size: 7.5vw;
+    font-size: 112.5px;
   }
   
   #main .container p{
-    font-size: 3.5vw;
+    font-size: 52.5px;
   }
   
   /*About*/
   #about{
-    width: 100vw;
-    padding:0px 4% 0px 4%;
-  }
-  #about .container{
-    width: 100%;
-    margin: auto;
-    padding-bottom: 20px;
+    margin: 0px 4% 0px 4%;
   }
   #about .container h1{
-    font-size: 5vw;
-  }
-  #about .container .container2{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  #about .container .container2 img{
-    width: 33%;
-  }
-  #about .container .container2 .isi{
-    padding-left: 10px;
-    display: flex;
-    justify-content:flex-start;
-    gap: 10px;
+    font-size: 75px;
   }
   #about .container .container2 .isi p,table{
-    font-size: 1.875vw;
+    font-size: 28.125px;
   }  
-  
+
   /* SKILL */
   #skill h2{
-    font-size: 5vw;
+    font-size: 75px;
   }
   #skill .container p{
-    font-size: 1.458vw;
+    font-size: 21.87px;
   }
   #skill .container h3{
-    font-size: 2.5vw;
+    font-size: 37.5px;
   }
 
   /*contact*/
   #contact .container{
-    display: flex;
-    justify-content: flex-start;
     margin: 4%;
   }  
-  #contact .container .form{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-  }
-  
   #contact .container .form h1{
-    font-size: 5vw;
-    color: white;
-    padding: 15px;
+    font-size: 75px;
   }
   #contact .container .form label{
-    font-size: 2.5vw;
+    font-size: 37.5px;
   }
   #contact .container .form input{
-    font-size: 2.5vw;
+    font-size: 37.5px;
   }
   #contact .container .form button{
-    font-size: 2.5vw;
+    font-size: 37.5px;
   }
   
   /* FOOTER */
   footer h1{
-    font-size: 2.916vw;
+    font-size: 21.8745px;
   }
 }
