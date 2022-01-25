@@ -11,32 +11,67 @@ nav{
   max-width: 100%;
   height: 50px;
   position: fixed;
+  z-index: 1;
 }
-.navbar{
-  display: flex;
-  justify-content: flex-end;
+#navigationToggle {
+  display: none;
 }
 nav ul{
-display: none;
-}
-nav img{
+  margin: 0;
   height: 50px;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+nav ul li{
+  text-align: center;
+}
+nav ul li a{
+  text-shadow:1px 1px 10px black, 1px 1px 10px black;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
 }
 
-#navtog + ul.active {
-  background-color: black;
-  display: block;
-  position: absolute;
-  width: 100vw;
-  top: 100px;
-  opacity: 1;
+@media only screen and (max-width: 960px){
+  nav ul{
+    display: none;
+  }
+  nav img{
+    height: 50px;
+  }
+  nav ul li{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+  }
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  #navigationToggle {
+    position: absolute;
+    right: 0px;
+    display: block;
+  }
+  #navigationToggle + ul.active li {
+    background-color: #2D2D2A;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navigationToggle + ul.active {
+    background-color: #2D2D2A;
+    display: block;
+    padding-top: 50px;
+    width: 100vw;
+    opacity: 1;
+  }
 }
-#navtog + ul.active li {
-  padding: 0;
-  margin: 0;
-  background-color: black;
-  display: block;
-}
+
 /* Main */
 #main{
   width: 100vw;
@@ -68,7 +103,7 @@ nav img{
 #main .container p{
   color: white;
   text-align: center;
-  font-size: 33.6px;
+  font-size: 27.456px;
   letter-spacing: 6px;
 }
 
@@ -87,7 +122,8 @@ nav img{
 
 #about .container h1{
   text-align: center;
-  font-size: 48px;
+  font-size: 36px;
+  padding:10px 0px 20px 0px;
 }
 
 #about .container .container2{
@@ -100,11 +136,11 @@ nav img{
 }
 
 #about .container .container2 img{
-  width: 80%;
+  width: 70%;
 }
 
 #about .container .container2 .isi p{
-  font-size: 18px;
+  font-size: 13.824px;
   text-align: left;
   width: 100%;
 }
@@ -112,7 +148,7 @@ nav img{
 #about .container .container2 .table table,th,td{
   border: 1px solid black;
   border-collapse: collapse;
-  font-size: 20px;
+  font-size: 13.824px;
 }
 
 #about .container .container2 table{
@@ -125,7 +161,7 @@ nav img{
 
 /* SKILL */
 #skill h2{
-  font-size: 48px;
+  font-size: 36px;
   margin-left: 4%;
 }
 
@@ -136,7 +172,7 @@ nav img{
 }
 
 #skill .container h3{
-  font-size: 24px;
+  font-size: 22.272px;
   margin-left: 4%;
 }
 
@@ -148,7 +184,7 @@ nav img{
 }
 
 #skill .container p{
-  font-size: 14px;
+  font-size: 13.824px;
   color: white;
   width: 18vw;
   padding: 10px;
@@ -295,17 +331,18 @@ footer h1{
 
 /* RESPONSIVE */
 @media only screen and (min-width: 960px){
-  nav{
+  /* nav{
     background-color: #2D2D2A;
     width: 100vw;
     max-width: 100%;
     height: 50px;
     position: fixed;
   }
-  nav img{
+  #navigationToggle{
     display: none;
   }
   nav ul{
+    margin: 0;
     height: 50px;
     max-height: 100%;
     display: flex;
@@ -320,7 +357,7 @@ footer h1{
     color: white;
     text-decoration: none;
     font-size: 24px;
-  }
+  } */
 
   /* Main */
   #main .container h1{
@@ -328,7 +365,7 @@ footer h1{
   }
   
   #main .container p{
-    font-size: 3.5vw;
+    font-size: 2.86vw;
   }
   
   /*About*/
@@ -342,7 +379,7 @@ footer h1{
     padding-bottom: 20px;
   }
   #about .container h1{
-    font-size: 5vw;
+    font-size: 3.75vw;
   }
   #about .container .container2{
     max-width: 100%;
@@ -359,9 +396,10 @@ footer h1{
     width: 73%;
     display: flex;
     justify-content:space-between;
+    gap: 5px;
   }
   #about .container .container2 .isi p,table{
-    font-size: 1.875vw;
+    font-size: 1.44vw;
   }
   #about .container .container2 .isi .p{
     width: 50%;
@@ -372,13 +410,13 @@ footer h1{
   
   /* SKILL */
   #skill h2{
-    font-size: 5vw;
+    font-size: 3.75vw;
   }
   #skill .container p{
-    font-size: 1.458vw;
+    font-size: 1.44vw;
   }
   #skill .container h3{
-    font-size: 2.5vw;
+    font-size: 2.32vw;
   }
 
   /*contact*/
@@ -430,7 +468,7 @@ footer h1{
     margin: 0px 4% 0px 4%;
   }
   #about .container h1{
-    font-size: 75px;
+    font-size: 65.625px;
   }
   #about .container .container2 .isi p,table{
     font-size: 28.125px;
