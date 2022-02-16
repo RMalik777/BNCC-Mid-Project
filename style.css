@@ -4,6 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Bai Jamjuree', sans-serif;
+  max-width: 100%;
 }
 nav{
   background-color: #2D2D2A;
@@ -40,7 +41,7 @@ nav ul li a:hover{
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 959px){
   nav ul{
     display: none;
   }
@@ -164,7 +165,7 @@ nav ul li a:hover{
 #about .container .container2 img{
   width: 70%;
   border-radius: 15px;
-  margin: 5px;
+  margin: 15px;
   box-shadow: 5px 5px 10px black;
 }
 
@@ -276,19 +277,18 @@ nav ul li a:hover{
 /*contact*/
 #contact{
   max-width: 100%;
-}
-
-#contact .container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: auto;
-  margin: 5px;
-  margin-bottom: 50px;
 }
 
-#contact .container .form{
-  width: 80%;
+#contact .containermain{
+  max-width: 100%;
+  padding: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+#contact .containermain .container .form{
+  width: 100%;
   border: 2px solid black;
   background-color: #3F5E5A;
   border-radius: 20px;
@@ -302,26 +302,26 @@ nav ul li a:hover{
   margin-bottom: 20px;
 }
 
-#contact .container .form h1{
+#contact .containermain .container .form h1{
   font-size: 24px;
   color: white;
   padding: 15px;
 }
 
-#contact .container .form label{
+#contact .containermain .container .form label{
   color: white;
   font-size: 18px;
   padding-left: 10px;
 }
 
-#contact .container .form input{
+#contact .containermain .container .form input{
   padding: 5px;
   padding-left: 10px;
   font-size: 18px;
   border-radius: 15px;
 }
 
-#contact .container .form button{
+#contact .containermain .container .form button{
   font-size: 18px;
   width: 50%;
   padding: 10px;
@@ -330,12 +330,15 @@ nav ul li a:hover{
   background-color: #20FC8F;
 }
 
-#contact .container .form .button{
+#contact .containermain .container .form .button{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
-  
+  padding-bottom: 10px; 
+}
+
+#contact .containermain .container2{
+  display: none;
 }
 
 /* FOOTER */
@@ -346,6 +349,7 @@ footer{
 
 footer .link{
   width: 100%;
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -354,6 +358,9 @@ footer .link{
 
 footer img{
   width: 40px;
+}
+footer img:hover{
+  width: 50px;
 }
 
 footer h1{
@@ -427,31 +434,56 @@ footer h1{
   }
 
   /*contact*/
-  #contact .container{
+  #contact .containermain{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: flex-start;
+  }
+
+  #contact .containermain .container{
+    width: 50%;
     margin: 4%;
   }  
-  #contact .container .form{
-    width: 30%;
-    height: 50%;
+  #contact .containermain .container .form{
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
   
-  #contact .container .form h1{
+  #contact .containermain .container .form h1{
     font-size: 2.5vw;
     color: white;
     padding: 15px;
   }
-  #contact .container .form label{
+  #contact .containermain .container .form label{
     font-size: 1.4583vw;
   }
-  #contact .container .form input{
+  #contact .containermain .container .form input{
     font-size: 1.4583vw;
   }
-  #contact .container .form button{
+  #contact .containermain .container .form button{
     font-size: 1.4583vw;
+  }
+  #contact .containermain .container2{
+    margin-right: 4%;
+    display: block;
+    height: 30%;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(32, 252, 143, 0.5)
+  }
+  #contact .containermain .container2 .containerisi{
+    margin: 10px;
+  }
+  #contact .containermain .container2 .containerisi h3{
+    margin-bottom: 5px;
+    font-size: 2.5vw;
+  }
+  #contact .containermain .container .containerisi h4{
+    font-size: 2.32vw;
   }
   
   /* FOOTER */
@@ -493,21 +525,29 @@ footer h1{
   }
 
   /*contact*/
-  #contact .container{
+  #contact .containermain .container{
     margin: 4%;
   }  
-  #contact .container .form h1{
+  #contact .containermain .container .form h1{
     font-size: 75px;
   }
-  #contact .container .form label{
+  #contact .containermain .container .form label{
     font-size: 37.5px;
   }
-  #contact .container .form input{
+  #contact .containermain .container .form input{
     font-size: 37.5px;
   }
-  #contact .container .form button{
+  #contact .containermain .container .form button{
     font-size: 37.5px;
   }
+
+  #contact .containermain .container2 .containerisi h3{
+    font-size: 75px;
+  }
+  #contact .containermain .container .containerisi h4{
+    font-size: 37.5px;
+  }
+  
   
   /* FOOTER */
   footer h1{
