@@ -87,7 +87,7 @@ nav ul li a:hover{
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),url(/assets/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),url(/assets/background.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -229,46 +229,46 @@ nav ul li a:hover{
 }
 
 #skill .container .prog .c{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/C.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/C.webp);
   background-size: cover;
   background-position: center;
   border-radius: 20px;
 }
 #skill .container .prog .css{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/CSS.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/CSS.webp);
   background-size: cover;
   border-radius: 20px;
 }
 #skill .container .prog .html{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/HTML2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/HTML2.webp);
   background-position: center;
   background-size: cover;
   border-radius: 20px;
 }#skill .container .prog .python{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/python.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/python.webp);
   background-position: 70%;
   background-size: cover;
   border-radius: 20px;
 }
 #skill .container .soft .ps{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/ps1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/ps1.webp);
   background-size: cover;
   background-position: 65%;
   border-radius: 20px;
 }
 #skill .container .soft .prpro{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/prpro.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/prpro.webp);
   background-size: cover;
   border-radius: 20px;
 }
 #skill .container .soft .fig{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/fig.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/fig.webp);
   background-position: 50% 54%;
   background-size: 550%;
   border-radius: 20px;
 }
 #skill .container .soft .vsc{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/coder2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/coder2.webp);
   background-position: 70%;
   background-size: cover;
   border-radius: 20px;
