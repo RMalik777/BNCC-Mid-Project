@@ -1,13 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   max-width: 100%;
 }
-nav{
-  background-color: #2D2D2A;
+nav {
+  background-color: #2d2d2a;
   width: 100vw;
   max-width: 100%;
   height: 50px;
@@ -17,7 +17,7 @@ nav{
 #navigationToggle {
   display: none;
 }
-nav ul{
+nav ul {
   margin: 0;
   height: 50px;
   max-height: 100%;
@@ -26,40 +26,40 @@ nav ul{
   align-items: center;
   list-style: none;
 }
-nav ul li{
+nav ul li {
   text-align: center;
 }
-nav ul li a{
-  text-shadow:1px 1px 10px black, 1px 1px 10px black;
+nav ul li a {
+  text-shadow: 1px 1px 10px black, 1px 1px 10px black;
   color: white;
   text-decoration: none;
   font-size: 24px;
 }
 
-nav ul li a:hover{
-  color: #20FC8F;
+nav ul li a:hover {
+  color: #20fc8f;
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 959px){
-  nav ul{
+@media only screen and (max-width: 959px) {
+  nav ul {
     display: none;
   }
-  nav img{
+  nav img {
     height: 50px;
   }
-  nav ul li{
+  nav ul li {
     text-align: center;
     width: 100%;
     height: 40px;
   }
-  nav ul li a{
+  nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 24px;
   }
-  nav ul li a:hover{
-    color: #20FC8F;
+  nav ul li a:hover {
+    color: #20fc8f;
     text-decoration: underline;
   }
   #navigationToggle {
@@ -68,13 +68,13 @@ nav ul li a:hover{
     display: block;
   }
   #navigationToggle + ul.active li {
-    background-color: #2D2D2A;
+    background-color: #2d2d2a;
     margin: 0;
     padding: 0;
   }
-  
+
   #navigationToggle + ul.active {
-    background-color: #2D2D2A;
+    background-color: #2d2d2a;
     display: block;
     padding-top: 50px;
     width: 100vw;
@@ -83,18 +83,19 @@ nav ul li a:hover{
 }
 
 /* Main */
-#main{
+#main {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),url(/assets/background.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(/assets/background.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
-#main .container{
+#main .container {
   height: 100%;
   margin: auto;
   display: flex;
@@ -103,57 +104,58 @@ nav ul li a:hover{
   justify-content: center;
 }
 
-#main .container h1{
+#main .container h1 {
   color: white;
-  text-align:center;
+  text-align: center;
   font-size: 72px;
   letter-spacing: 8px;
 }
 
-#main .container p{
+#main .container p {
   color: white;
   text-align: center;
   font-size: 27.456px;
   letter-spacing: 7px;
 }
-#main .container h1, #main .container p{
+#main .container h1,
+#main .container p {
   text-shadow: 1px 1px burlywood;
   animation-name: main;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
 @keyframes main {
-  0%{
+  0% {
     text-shadow: 0px 0px 0px burlywood;
   }
-  50%{
+  50% {
     text-shadow: 1px 1px 10px burlywood;
   }
-  100%{
+  100% {
     text-shadow: 0px 0px 0px burlywood;
   }
 }
 
 /*About*/
-#about{
+#about {
   width: 100vw;
   max-width: 100%;
 }
 
-#about .container{
+#about .container {
   width: 100%;
   margin: auto;
   padding-bottom: 20px;
   margin: auto;
 }
 
-#about .container h1{
+#about .container h1 {
   text-align: center;
   font-size: 36px;
-  padding:10px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
 }
 
-#about .container .container2{
+#about .container .container2 {
   margin: auto;
   padding: 5px;
   padding-bottom: 20px;
@@ -162,62 +164,66 @@ nav ul li a:hover{
   align-items: center;
 }
 
-#about .container .container2 img{
+#about .container .container2 img {
   width: 70%;
   border-radius: 15px;
   margin: 15px;
   box-shadow: 5px 5px 10px black;
 }
 
-#about .container .container2 img:hover{
+#about .container .container2 img:hover {
   transform: scale(110%);
 }
 
-#about .container .container2 .isi p{
+#about .container .container2 .isi p {
   font-size: 13.824px;
   text-align: left;
   width: 100%;
 }
 
-#about .container .container2 .table table,th,td{
+#about .container .container2 .table table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
   font-size: 13.824px;
 }
 
-#about .container .container2 table{
+#about .container .container2 table {
   width: 100%;
 }
 
-#about .container .container2 th,td{
+#about .container .container2 th,
+td {
   padding: 5px;
 }
 
 /* SKILL */
-#skill h2{
+#skill h2 {
   font-size: 36px;
   margin-left: 4%;
 }
 
-#skill .container{
+#skill .container {
   margin: auto;
   height: auto;
   margin-bottom: 20px;
 }
 
-#skill .container h3{
+#skill .container h3 {
   font-size: 22.272px;
   margin-left: 4%;
 }
 
-#skill .container .prog, .soft{
+#skill .container .prog,
+.soft {
   height: 15vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-#skill .container p{
+#skill .container p {
   font-size: 13.824px;
   color: white;
   width: 18vw;
@@ -228,73 +234,82 @@ nav ul li a:hover{
   align-items: flex-end;
 }
 
-#skill .container .prog .c{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/C.webp);
+#skill .container .prog .c {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(/assets/C.webp);
   background-size: cover;
   background-position: center;
   border-radius: 20px;
 }
-#skill .container .prog .css{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/CSS.webp);
+#skill .container .prog .css {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(/assets/CSS.webp);
   background-size: cover;
   border-radius: 20px;
 }
-#skill .container .prog .html{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/HTML2.webp);
+#skill .container .prog .html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(/assets/HTML2.webp);
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-}#skill .container .prog .python{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/python.webp);
+}
+#skill .container .prog .python {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(/assets/python.webp);
   background-position: 70%;
   background-size: cover;
   border-radius: 20px;
 }
-#skill .container .soft .ps{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/ps1.webp);
+#skill .container .soft .ps {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(/assets/ps1.webp);
   background-size: cover;
   background-position: 65%;
   border-radius: 20px;
 }
-#skill .container .soft .prpro{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/prpro.webp);
+#skill .container .soft .prpro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(/assets/prpro.webp);
   background-size: cover;
   border-radius: 20px;
 }
-#skill .container .soft .fig{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/fig.webp);
+#skill .container .soft .fig {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(/assets/fig.webp);
   background-position: 50% 54%;
   background-size: 550%;
   border-radius: 20px;
 }
-#skill .container .soft .vsc{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/coder2.webp);
+#skill .container .soft .vsc {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(/assets/coder2.webp);
   background-position: 70%;
   background-size: cover;
   border-radius: 20px;
 }
 
 /*contact*/
-#contact{
+#contact {
   max-width: 100%;
   margin: auto;
 }
 
-#contact .containermain{
+#contact .containermain {
   max-width: 100%;
   padding: 20px;
   margin-bottom: 50px;
   width: 100%;
 }
 
-#contact .containermain .container .form{
+#contact .containermain .container .form {
   width: 100%;
   border: 2px solid black;
-  background-color: #3F5E5A;
+  background-color: #3f5e5a;
   border-radius: 20px;
 }
 
-.contentform{
+.contentform {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -302,52 +317,53 @@ nav ul li a:hover{
   margin-bottom: 20px;
 }
 
-#contact .containermain .container .form h1{
+#contact .containermain .container .form h1 {
   font-size: 24px;
   color: white;
   padding: 15px;
 }
 
-#contact .containermain .container .form label{
+#contact .containermain .container .form label {
   color: white;
   font-size: 18px;
   padding-left: 10px;
 }
 
-#contact .containermain .container .form input{
+#contact .containermain .container .form input {
   padding: 5px;
   padding-left: 10px;
   font-size: 18px;
   border-radius: 15px;
 }
 
-#contact .containermain .container .form button{
+#contact .containermain .container .form button {
   font-size: 18px;
   width: 50%;
   padding: 10px;
   text-align: center;
   border-radius: 24px;
-  background-color: #20FC8F;
+  background-color: #20fc8f;
 }
 
-#contact .containermain .container .form .button{
+#contact .containermain .container .form .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
 }
 
-#contact .containermain .container2{
+#contact .containermain .container2 {
   display: none;
 }
 
 /* FOOTER */
 
-footer{
-  background-color: #3F5E5A; opacity:0.95;
+footer {
+  background-color: #3f5e5a;
+  opacity: 0.95;
 }
 
-footer .link{
+footer .link {
   width: 100%;
   height: 60px;
   display: flex;
@@ -356,202 +372,196 @@ footer .link{
   gap: 10%;
 }
 
-footer img{
+footer img {
   width: 40px;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(190deg) brightness(102%) contrast(105%);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(190deg)
+    brightness(102%) contrast(105%);
 }
-footer img:hover{
+footer img:hover {
   width: 50px;
 }
 
-footer h1{
+footer h1 {
   color: white;
   text-align: center;
   font-size: 14px;
   padding: 10px;
 }
 
-
 /* RESPONSIVE */
-@media only screen and (min-width: 960px){
+@media only screen and (min-width: 960px) {
   /* Main */
-  #main .container h1{
+  #main .container h1 {
     font-size: 7.5vw;
   }
-  
-  #main .container p{
+
+  #main .container p {
     font-size: 2.86vw;
   }
-  
+
   /*About*/
-  #about{
+  #about {
     width: 100vw;
     max-width: 100%;
     padding: 0px 4% 0px 4%;
   }
-  #about .container{
+  #about .container {
     max-width: 100%;
     padding-bottom: 20px;
   }
-  #about .container h1{
+  #about .container h1 {
     font-size: 3.75vw;
   }
-  #about .container .container2{
+  #about .container .container2 {
     max-width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
   }
-  #about .container .container2 img{
+  #about .container .container2 img {
     width: 33%;
   }
-  #about .container .container2 .isi{
+  #about .container .container2 .isi {
     padding-left: 20px;
     width: 73%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     gap: 5px;
   }
-  #about .container .container2 .isi p,th,td{
+  #about .container .container2 .isi p,
+  th,
+  td {
     font-size: 1.44vw;
   }
-  #about .container .container2 .isi .p{
+  #about .container .container2 .isi .p {
     width: 50%;
   }
-  #about .container .container2 .isi .table{
+  #about .container .container2 .isi .table {
     width: 50%;
-  } 
-  
+  }
+
   /* SKILL */
-  #skill h2{
+  #skill h2 {
     font-size: 3.75vw;
   }
-  #skill .container p{
+  #skill .container p {
     font-size: 1.44vw;
   }
-  #skill .container h3{
+  #skill .container h3 {
     font-size: 2.32vw;
   }
 
   /*contact*/
-  #contact .containermain{
+  #contact .containermain {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
   }
 
-  #contact .containermain .container{
+  #contact .containermain .container {
     width: 50%;
     margin: 4%;
-  }  
-  #contact .containermain .container .form{
+  }
+  #contact .containermain .container .form {
     width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
   }
-  
-  #contact .containermain .container .form h1{
+
+  #contact .containermain .container .form h1 {
     font-size: 2.5vw;
     color: white;
     padding: 15px;
   }
-  #contact .containermain .container .form label{
+  #contact .form label,
+  #contact .form input,
+  #contact .form button {
     font-size: 1.4583vw;
   }
-  #contact .containermain .container .form input{
-    font-size: 1.4583vw;
-  }
-  #contact .containermain .container .form button{
-    font-size: 1.4583vw;
-  }
-  #contact .containermain .container2{
+  #contact .containermain .container2 {
     margin-right: 4%;
     display: block;
     height: 30%;
     width: 30%;
     border: 2px solid black;
     border-radius: 10px;
-    background-color: rgba(32, 252, 143, 0.5)
+    background-color: rgba(32, 252, 143, 0.5);
   }
-  #contact .containermain .container2 .containerisi{
+  #contact .containermain .container2 .containerisi {
     margin: 10px;
   }
-  #contact .containermain .container2 .containerisi h3{
+  #contact .containermain .container2 .containerisi h3 {
     margin-bottom: 5px;
     font-size: 2.5vw;
   }
-  #contact .containermain .container .containerisi h4{
+  #contact .containermain .container .containerisi h4 {
     font-size: 2.32vw;
   }
-  
+
   /* FOOTER */
-  footer h1{
+  footer h1 {
     font-size: 1.4583vw;
   }
 }
 
-@media only screen and (min-width: 1500px){
+@media only screen and (min-width: 1500px) {
   /* Main */
-  #main .container h1{
+  #main .container h1 {
     font-size: 112.5px;
   }
-  
-  #main .container p{
+
+  #main .container p {
     font-size: 52.5px;
   }
-  
+
   /*About*/
-  #about{
+  #about {
     margin: 0px 4% 0px 4%;
   }
-  #about .container h1{
+  #about .container h1 {
     font-size: 65.625px;
   }
-  #about .container .container2 .isi p,table{
+  #about .container .container2 .isi p,
+  table {
     font-size: 28.125px;
-  }  
+  }
 
   /* SKILL */
-  #skill h2{
+  #skill h2 {
     font-size: 75px;
   }
-  #skill .container p{
+  #skill .container p {
     font-size: 21.87px;
   }
-  #skill .container h3{
+  #skill .container h3 {
     font-size: 37.5px;
   }
 
   /*contact*/
-  #contact .containermain .container{
+  #contact .containermain .container {
     margin: 4%;
-  }  
-  #contact .containermain .container .form h1{
+  }
+  #contact .containermain .container .form h1 {
     font-size: 75px;
   }
-  #contact .containermain .container .form label{
-    font-size: 37.5px;
-  }
-  #contact .containermain .container .form input{
-    font-size: 37.5px;
-  }
-  #contact .containermain .container .form button{
+  #contact .form label,
+  #contact .form input,
+  #contact .form button {
     font-size: 37.5px;
   }
 
-  #contact .containermain .container2 .containerisi h3{
+  #contact .containermain .container2 .containerisi h3 {
     font-size: 75px;
   }
-  #contact .containermain .container .containerisi h4{
+  #contact .containermain .container .containerisi h4 {
     font-size: 37.5px;
   }
-  
-  
+
   /* FOOTER */
-  footer h1{
+  footer h1 {
     font-size: 21.8745px;
   }
 }
